@@ -270,6 +270,10 @@ security_ntp_servers:
   - 1.pool.ntp.org
   - 2.pool.ntp.org
   - 3.pool.ntp.org
+# NTP server options.
+security_ntp_server_options: iburst
+# Configure Chrony to synchronize the hardware clock
+security_ntp_sync_rtc: false
 # Chrony limits access to clients that are on certain subnets.  Adjust the
 # following subnets here to limit client access to chrony servers.
 security_allowed_ntp_subnets:
